@@ -20,7 +20,7 @@ class Patient
 
   def appointment
     Appointment.all.select do |appointment|
-      appointment.patient == self
+      appointments.patient == self
     end
   end
 end
